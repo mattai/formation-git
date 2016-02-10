@@ -4,6 +4,8 @@ Docker étend le format de conteneur Linux standard, LXC, avec une API de haut n
 
 La technologie de conteneur de Docker peut être utilisée pour étendre des systèmes distribués de façon à ce qu'ils s'exécutent de manière autonome depuis une seule machine physique ou une seule instance par nœud. Cela permet aux nœuds d'être déployés au fur et à mesure que les ressources sont disponibles, offrant un déploiement transparent et similaire aux PaaS pour des systèmes comme Apache Cassandra, Riak ou d'autres systèmes distribués5.
 
+MY FIRST CHUNK
+
 Sommaire  [masquer] 
 1	Vue d’ensemble
 2	Histoire
@@ -21,6 +23,8 @@ Histoire[modifier | modifier le code]
 Docker a été développé par Solomon Hykes pour un projet interne de dotCloud, une société proposant une plate-forme en tant que service, avec les contributions d'Andrea Luzzardi et Francois-Xavier Bourlet, également employés de dotCloud. Docker est une évolution basée sur les technologies propriétaires de dotCloud, elles-mêmes construites sur des projets open source.
 
 Docker a été distribué en tant que projet open source à partir de mars 20133.
+
+MY SECOND CHUNK
 
 Au 18 novembre 2013, le projet a été mis en favoris plus de 7 300 fois sur GitHub (14e projet le plus populaire), avec plus de 900 forks et 200 contributeurs6.
 
