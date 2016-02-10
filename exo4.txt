@@ -1,0 +1,8 @@
+nitialement développée par Facebook, l'application a été libérée dans l'espace open-source en juillet 2008, et rapidement adoptée par des entreprises gérant d'importants volumes de données, telles que Twitter3, Netflix4, digg.com5 ou Spotify6. Jeff Hammerbacher, directeur de la division Data chez Facebook, a décrit Cassandra comme une application du type de BigTable servie par une infrastructure proche de Amazon DynamoDB (en).
+
+En 2015 selon db-engines.com7, Cassandra occupe la 8e place dans le classement des systèmes de gestion de bases de données les plus populaires tout types confondus, et la deuxième place pour les systèmes de gestion de bases de données NoSQL (derrière MongoDB).
+
+Architecture[modifier | modifier le code]
+Cassandra est basée sur une structuration en paires clé-valeur de type eventually consistent8. L'architecture relationnelle est orientée colonne, avec des éléments plus traditionnels (stockage horizontal des paires). Les données sont distribuées selon leur clé primaire.
+
+Le langage de requête s'appelle CQL pour Cassandra Query Language. Voici un exemple de création d'un espace de clés contenant une famille de colonne en CQL 3.09 :
