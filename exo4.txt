@@ -41,6 +41,7 @@ JMeter
 Kafka
 Karaf
 Lenya
+FRANCE
 Apache Logging Services
 Lucene
 Mahout
