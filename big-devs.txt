@@ -1,0 +1,40 @@
+Docker est un logiciel libre qui automatise le déploiement d'applications dans des conteneurs logiciels1. Selon la firme de recherche sur l'industrie 451 Research, « Docker est un outil qui peut empaqueter une application et ses dépendances dans un conteneur virtuel, qui pourra être exécuté sur n'importe quel serveur Linux ». Ceci permet d'étendre la flexibilité et la portabilité d’exécution d'une application, que ce soit sur la machine locale, un cloud privé ou public, une machine nue, etc. 2
+
+Docker étend le format de conteneur Linux standard, LXC, avec une API de haut niveau fournissant une solution de virtualisation qui exécute les processus de façon isolée3. Docker utilise LXC, cgroups, et le noyau Linux lui-même2. Contrairement aux machines virtuelles traditionnelles, un conteneur Docker n'inclut pas de système d'exploitation, s'appuyant sur les fonctionnalités du système d’exploitation fournies par l'infrastructure sous-jacente4.
+
+La technologie de conteneur de Docker peut être utilisée pour étendre des systèmes distribués de façon à ce qu'ils s'exécutent de manière autonome depuis une seule machine physique ou une seule instance par nœud. Cela permet aux nœuds d'être déployés au fur et à mesure que les ressources sont disponibles, offrant un déploiement transparent et similaire aux PaaS pour des systèmes comme Apache Cassandra, Riak ou d'autres systèmes distribués5.
+
+Sommaire  [masquer] 
+1	Vue d’ensemble
+2	Histoire
+3	Intégration avec d'autres systèmes
+4	Références
+5	Annexes
+5.1	Articles connexes
+5.2	Liens externes
+Vue d’ensemble[modifier | modifier le code]
+Docker permet la mise en œuvre de containers s'exécutant en isolation, via une API de haut-niveau. Construit sur des capacités du noyau Linux (surtout les cgroups et espaces de nommage), un container Docker, à l'opposé de machines virtuelles traditionnelles, ne requiert aucun système d'exploitation séparé et n'en fournit aucun. Il s'appuie plutôt sur les fonctionnalités du noyau et utilise l'isolation de ressources (CPU, mémoire, I/O, connexions réseau etc.) ainsi que des espaces de noms séparés pour isoler le système d'exploitation tel que vu par l'application. Docker accède aux capacités de virtualisation du noyau Linux, soit directement à travers la bibliothèque libcontainer (disponible depuis Docker 0.9), soit indirectement via libcrt, LXC (Linux Containers) ou systemd-nspawn.
+
+Utiliser Docker pour créer et gérer des containers peut simplifier la mise en œuvre de systèmes distribués en permettant à de multiples applications, tâches de fond et autres processus de s'exécuter de façon autonome sur une seule machine physique ou à travers un éventail de machines virtuelles. Ceci permet de déployer des nœuds en tant que ressources sur besoin, fournissant ainsi une plateforme de déploiement de style PAAS et la scalabilité de systèmes tels Apache Cassandra, MongoDB ou Riak, ainsi que la simplification de la création et maintenance de queues de tâches ou autres systèmes distribués.
+
+Histoire[modifier | modifier le code]
+Docker a été développé par Solomon Hykes pour un projet interne de dotCloud, une société proposant une plate-forme en tant que service, avec les contributions d'Andrea Luzzardi et Francois-Xavier Bourlet, également employés de dotCloud. Docker est une évolution basée sur les technologies propriétaires de dotCloud, elles-mêmes construites sur des projets open source.
+
+Docker a été distribué en tant que projet open source à partir de mars 20133.
+
+Au 18 novembre 2013, le projet a été mis en favoris plus de 7 300 fois sur GitHub (14e projet le plus populaire), avec plus de 900 forks et 200 contributeurs6.
+
+Au 9 mai 2014, le projet a été mis en favoris plus de 11 000 fois sur GitHub, avec plus de 1 900 forks et 420 contributeurs6.
+
+En octobre 2015, le projet a été mis en favoris plus de 25 000 fois sur GitHub, avec plus de 6 500 forks et 1 100 contributeurs6.
+
+Intégration avec d'autres systèmes[modifier | modifier le code]
+L'intégration de Docker a été faite avec les outils de gestion d'infrastructures suivants :
+
+Chef 7
+Puppet 8
+Vagrant 9
+Jenkins 10
+OpenStack Nova 11
+OpenSVC 12
+Le 19 septembre 2013, Red Hat et Docker ont annoncé une collaboration concernant Fedora, Red Hat Enterprise Linux et Openshift13. En mai 2015, le constructeur de NAS Synology intègre Docker dans son logiciel interne DSM v5.214.
